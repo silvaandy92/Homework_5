@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Midterm Exam</h1>
+        <p>Find all prime numbers between two numbers</p>
+    </header>
+    
+    <main>
+        <p>
+            <label class='numbers' for='start'>Number 1:</label><br>
+            <input type='number' name='start' id='start' min='2' max='100' style='width: 150px;'/>
+        </p>
+
+        <p>
+            <label class='numbers' for='end'>Number 2:</label><br>
+            <input type='number' name='end' id='end' min='2' max='100' style='width: 150px;'/>
+        </p><br>
+        
+        <div>
+            <input class='submitButton' type='submit' value='Submit' onclick="findPrime()" name='print'/>
+        </div>
+        <div class='statement' id='statement'></div>
+        <div class='prime' id='result'></div>
+        
+    </main>
+    <script src=app.js></script>    
+</body>
+</html>
