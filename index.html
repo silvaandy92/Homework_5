@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Midterm Exam</h1>
-        <p>Find all prime numbers between two numbers</p>
-    </header>
+    <div class='container'>
+        <header>
+            <h1>Midterm Exam</h1>
+            <p>Find all prime numbers between two numbers</p>
+        </header>
+    </div>
     
     <main>
-        <p>
-            <label class='numbers' for='start'>Number 1:</label><br>
-            <input type='number' name='start' id='start' min='2' max='100' style='width: 150px;'/>
-        </p>
-
-        <p>
-            <label class='numbers' for='end'>Number 2:</label><br>
-            <input type='number' name='end' id='end' min='2' max='100' style='width: 150px;'/>
-        </p><br>
+        <div class='container'>
+            <div class='row'>
+                <div class='form-group col-12 col-sm-6'>
+                    <label for='number1'>Number 1:</label>
+                    <input type='number' class='form-control' id='number1'/>
+                </div>
+                <div class='form-goup col-12 col-sm-6'>
+                    <label for='number2'>Number2:</label>
+                    <input type='number' class='form-control' id='number2'/>
+                </div>
+            </div>
         
-        <div>
-            <input class='submitButton' type='submit' value='Submit' onclick="findPrime()" name='print'/>
+        
+            <div>
+            <input class='btn btn-outline-primary' id='button' type='submit' value='Submit' onclick="findPrime()" name='print'/>
+            </div>
+            <span id='number1Help'></span>
+            <div class='statement' id='statement'></div>
+            <div class='prime' id='result'></div>
         </div>
-        <div class='statement' id='statement'></div>
-        <div class='prime' id='result'></div>
         
     </main>
     <script src=app.js></script>    

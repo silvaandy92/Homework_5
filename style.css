@@ -4,18 +4,16 @@ html {
 }
 
 header {
-    padding-top: 75px;
-    
-    background-color: teal;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color:white;
+    background-color: teal;
     height: 200px;
-    align-content: center;
+    text-align: center;
 
 }
 
-p {
-    display: inline-block;
-}
+
 
 .prime {
     color: red;
@@ -26,19 +24,10 @@ p {
     font-size: large;
 }
 
-.numbers {
-    padding-right: 50%;
+#button {
+    margin-top: 15px;
 }
 
-.submitButton {
-   margin-right: 225px;
-	background-color: white;
-    border-radius:8px;
-    border-color: skyblue;
-	display:inline-block;
-	color: skyblue;
-	font-size:13px;
-	font-weight:bold;
-	padding:10px 18px;
-	text-decoration:none;
+span {
+    margin-top: 15px;
 }
